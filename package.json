@@ -2,7 +2,7 @@
   "name": "guzel-clinic",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Olga-Bondarenko/guzel-clinic",
+  "homepage": "https://olga-bondarenko.github.io/guzel-clinic/",
   "dependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.22.11",
     "@testing-library/jest-dom": "^5.17.0",
