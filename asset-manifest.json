@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/guzel-clinic/static/css/main.98d6a1ce.css",
+    "main.js": "/guzel-clinic/static/js/main.b3ad20d1.js",
+    "static/media/hardware.png": "/guzel-clinic/static/media/hardware.a7395c42752a52204240.png",
+    "static/media/logo.png": "/guzel-clinic/static/media/logo.497b49e00b68a39d8f82.png",
+    "static/media/laser.png": "/guzel-clinic/static/media/laser.d71ea63f00b55d134d14.png",
+    "static/media/injection.png": "/guzel-clinic/static/media/injection.554994e97906e9ad24bb.png",
+    "static/media/epilation.jpg": "/guzel-clinic/static/media/epilation.8bdbc59b1a9ce15ee446.jpg",
+    "index.html": "/guzel-clinic/index.html",
+    "main.98d6a1ce.css.map": "/guzel-clinic/static/css/main.98d6a1ce.css.map",
+    "main.b3ad20d1.js.map": "/guzel-clinic/static/js/main.b3ad20d1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98d6a1ce.css",
+    "static/js/main.b3ad20d1.js"
+  ]
+}
