@@ -4,7 +4,6 @@ import styles from './Header.module.scss';
 import { Button } from 'antd';
 import { MenuOutlined, PhoneOutlined  } from '@ant-design/icons';
 import { Navbar } from '../Navbar/Navbar';
-// import { VerticalMenu } from "../VerticalMenu/VerticalMenu";
 
 interface HeaderProps {
   isMobile: boolean;
