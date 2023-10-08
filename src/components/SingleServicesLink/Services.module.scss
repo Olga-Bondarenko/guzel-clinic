@@ -1,0 +1,20 @@
+.root {
+  display: flex !important;
+  font-size: 16px;
+  font-weight: 600;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  color: #eeac40;
+  text-decoration: none;
+  :hover {
+    text-decoration: underline solid 2px;
+  }
+
+  >img {
+    width: 350px;
+  }
+  > div {
+    margin-top: 10px !important;
+  }
+}
