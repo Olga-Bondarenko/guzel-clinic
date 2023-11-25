@@ -3,6 +3,7 @@ import { Navbar } from '../Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
 import { Breadcrumps } from '../Breadcrumps/Breadcrumps';
 import { Header } from '../Header/Header';
+import styles from './MainLayout.module.scss';
 
 export const MainLayout = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -25,16 +26,15 @@ export const MainLayout = () => {
   }, []);
 
   return (
-    <> {
-      !isMobile &&
-      <>
-     <Header isMobile={false}/>
-      
-      </>
-    }
+    <div className={styles.root}>
+      {!isMobile && (
+        <>
+          <Header isMobile={false} />
+          <Navbar />
+        </>
+      )}
       {/* <Breadcrumps/> */}
-    
-      <Outlet/>
-    </>
+      <Outlet />
+    </div>
   );
 };

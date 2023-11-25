@@ -1,0 +1,43 @@
+.root {
+  display: flex;
+}
+
+.specialRow {
+  font-size: 20px;
+  font-weight: bold;
+}
+.row {
+  line-height: 0.5rem;
+}
+.sideMenu {
+  width: 25%;
+  margin-right: 3rem;
+  height: max-content;
+  padding: 1rem;
+  :global(.ant-menu-item-selected),
+  :global(.ant-menu-submenu-selected > .ant-menu-submenu-title) {
+    color: #eeac40 !important ;
+  }
+}
+
+.price {
+  background-color: #fff;
+  width: 75%;
+  h3 {
+    margin: 1rem auto;
+    width: max-content;
+  }
+  th,
+  td {
+    // padding-left: 2rem !important;
+    width: 75%;
+    line-height: normal;
+    padding: .8rem 2rem !important;
+  }
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}

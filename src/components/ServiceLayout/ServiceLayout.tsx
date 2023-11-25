@@ -13,7 +13,6 @@ export const ServiceLayout = () => {
   };
 
   const handleMenuClick = (path: string) => {
-
     navigate(path);
     // onClose && onClose();
   };

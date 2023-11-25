@@ -1,17 +1,17 @@
 import { Menu } from 'antd';
 
 import styles from './Navbar.module.scss';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { FC } from 'react';
 
 import { services } from '../../data/services';
 
-interface NavbarProps {
-  mode: 'horizontal' | 'inline';
-  onClose?: () => void;
-}
+// interface NavbarProps {
+//   mode: 'horizontal' | 'inline';
+//   onClose?: () => void;
+// }
 
-export const Navbar: FC<NavbarProps> = ({ mode, onClose }) => {
+export const Navbar = () => {
   const navigate = useNavigate();
 
   const handleMenuClick = (path: string) => {
@@ -38,41 +38,72 @@ export const Navbar: FC<NavbarProps> = ({ mode, onClose }) => {
     };
   });
 
-  const items = [
-    { label: 'Главная', key: 'home', onClick: () => handleMenuClick('/') },
+  // const items = [
+  //   { label: 'Главная', key: 'home', onClick: () => handleMenuClick('/') },
+  //   {
+  //     label: 'Услуги',
+  //     key: 'services',
+  //     onClick: () => handleMenuClick('/all-services'),
+  //     // children: [
+  //     //   {
+  //     //     label: 'Все услуги',
+  //     //     key: 'all',
+  //     //     onClick: () => handleMenuClick('/all-services'),
+  //     //   },
+  //     //   ...allServices,
+  //     // ],
+  //   },
+  //   {
+  //     label: 'О нас',
+  //     key: 'about',
+  //     onClick: () => handleMenuClick('/about'),
+  //   },
+  //   {
+  //     label: 'Прайс',
+  //     key: 'price-list',
+  //     onClick: () => handleMenuClick('/price-list'),
+  //   },
+  //   {
+  //     label: 'Контакты',
+  //     key: 'contact',
+  //     onClick: () => handleMenuClick('/contacts'),
+  //   },
+  // ];
+
+  const menuItems = [
+    {
+      label: 'Главная',
+      to: '.',
+    },
     {
       label: 'Услуги',
-      key: 'services',
-      onClick: () => handleMenuClick('/all-services'),
-      // children: [
-      //   {
-      //     label: 'Все услуги',
-      //     key: 'all',
-      //     onClick: () => handleMenuClick('/all-services'),
-      //   },
-      //   ...allServices,
-      // ],
+      to: 'all-services',
+    },
+    {
+      label: 'Прeпараты',
+      to: 'brands',
     },
     {
       label: 'О нас',
-      key: 'about',
-      onClick: () => handleMenuClick('/about'),
+      to: 'about',
     },
     {
       label: 'Прайс',
-      key: 'price-list',
-      onClick: () => handleMenuClick('/price-list'),
+      to: 'price-list',
     },
     {
       label: 'Контакты',
-      key: 'contact',
-      onClick: () => handleMenuClick('/contacts'),
+      to: 'contacts',
     },
   ];
 
-  return <Menu items={items} mode={mode}
-    className={styles.menu}
-  />
-    
-   
+  return (
+    <nav className={styles.root}>
+      {menuItems.map((item, index) => (
+        <NavLink key={index} to={item.to}>
+          {item.label}
+        </NavLink>
+      ))}
+    </nav>
+  );
 };

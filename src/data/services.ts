@@ -9,11 +9,11 @@ export const services = [
     slug: 'laser-cosmetology',
     img: laser,
     children: [
-      {
-        title: 'Лазерная шлифовка и омоложение',
-        slug: 'laser-resurfacing',
-        img: laser,
-      },
+      // {
+      //   title: 'Лазерная шлифовка и омоложение',
+      //   slug: 'laser-resurfacing',
+      //   img: laser,
+      // },
       {
         title: 'Неабляционное лазерное омоложение',
         slug: 'laser-rejuvenation',
@@ -167,7 +167,7 @@ export const services = [
     ],
   },
   {
-    title: 'Эпиляция',
+    title: 'Лазерная эпиляция',
     slug: 'epilation',
     img: epilation,
   },

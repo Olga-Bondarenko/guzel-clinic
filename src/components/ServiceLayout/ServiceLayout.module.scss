@@ -1,22 +1,15 @@
 .root {
   display: flex;
-  margin: 20px;
+  // margin: 20px;
 }
 
 .sideMenu {
   width: 25%;
-  padding: 20px;
-  margin: 20px;
-  // background-color: #fcf3e4;
-  background-color: #fff0d5;
-  :global(.ant-menu-item-selected) {
-    background-color: #fff0d5;
-    color: #eeac40;
-  }
-  :global(.ant-menu-submenu-selected) {
-    background-color: #fff0d5;
-  }
-  :global(.ant-menu-submenu-selected .ant-menu-submenu-title) {
-    color: #eeac40;
+  margin-right: 3rem;
+  height: max-content;
+  padding: 1rem;
+  :global(.ant-menu-item-selected),
+  :global(.ant-menu-submenu-selected > .ant-menu-submenu-title) {
+    color: #eeac40 !important ;
   }
 }

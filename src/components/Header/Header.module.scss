@@ -1,40 +1,25 @@
 .root {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 40px;
-}
-
-.header {
-  font-size: 18px;
-  display: flex;  
-  align-items: center;
-
-  
-  // width: 50%;
-}
-
-.logo {
+  background-color: #fff9eb;
+  padding: 16px;
   font-size: 16px;
-  display: flex;
+  display: grid;
   align-items: center;
-  margin-right: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
+  column-gap: 50px;
   img {
     margin-right: 8px;
     width: 100px;
   }
 }
-.name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- 
-}
 
-.address {
-  margin: 0 40px;
-  // display: flex;
+.logo {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.phone {
+  font-size: 20px;
   svg {
     margin-right: 6px;
   }

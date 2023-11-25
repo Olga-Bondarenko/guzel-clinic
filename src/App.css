@@ -1,4 +1,15 @@
-.App {
+/* .App {
   text-align: center;
+
+} */
+
+.active {
+  color:#eeac40 !important;
+  text-decoration: none;
 }
 
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

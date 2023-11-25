@@ -15,11 +15,9 @@ export const SingleServicesLink: FC<SingleServicesLinkProps> = ({
   title,
   img,
   slug,
-}) => {
-  return (
-    <Link to={to} className={styles.root}>
-      <img src={img} alt={slug} />
-      <div>{title}</div>
-    </Link>
-  );
-};
+}) => (
+  <Link to={to} className={styles.root}>
+    <img src={img} alt={slug} />
+    <div className={styles.text}>{title}</div>
+  </Link>
+);

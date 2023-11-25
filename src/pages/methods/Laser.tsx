@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { MethodPropsProps } from '../../types/types';
-import { SingleServicesLink } from '../../components/SingleServicesLink/SingleServicesLink';
+import { SingleServicesLink } from '../ServiceLayout/SingleServicesLink/SingleServicesLink';
 
 import styles from '../Pages.module.scss'
 

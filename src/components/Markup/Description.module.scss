@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  margin-bottom: 3rem;
+
+  h4 {
+    font-size: 22px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    background-color: #fff9eb;
+    // text-align: center;
+  }
+
+  img {
+    height: 280px;
+    margin-right: 3rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
