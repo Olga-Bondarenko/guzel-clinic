@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { MethodPropsProps } from '../../types/types';
-import { SingleServicesLink } from '../ServiceLayout/SingleServicesLink/SingleServicesLink';
 import styles from '../Pages.module.scss'
+import { SingleItemLink } from '../../components/SingleItemLink';
 
 
 const issues = [
@@ -55,7 +55,7 @@ export const Hardware: FC<MethodPropsProps> = ({ services }) => {
       <div className={styles.serviceWrapper}>
 
         {services.map((service) => (
-          <SingleServicesLink
+          <SingleItemLink
           key={service.slug}
             to={`/services/hardware-cosmetology/${service.slug}`}
             title={service.title}

@@ -1,0 +1,1 @@
+export { SingleItemLink } from './SingleItemLink'

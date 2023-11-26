@@ -79,10 +79,10 @@ export const Navbar = () => {
       label: 'Услуги',
       to: 'all-services',
     },
-    {
-      label: 'Прeпараты',
-      to: 'brands',
-    },
+    // {
+    //   label: 'Прeпараты',
+    //   to: 'brands',
+    // },
     {
       label: 'О нас',
       to: 'about',

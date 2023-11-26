@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom';
 import { brands } from '../../data/brands';
 
-import { SingleServicesLink } from '../ServiceLayout/SingleServicesLink/SingleServicesLink';
 import { MarkupWrapper } from '../../components/Markup';
+import { SingleItemLink } from '../../components/SingleItemLink';
 
 export const Brand = () => {
   const params = useParams();
@@ -15,7 +15,7 @@ export const Brand = () => {
 
       <div className='wrapper'>
         {brand?.children?.map((child) => (
-          <SingleServicesLink
+          <SingleItemLink
             key={child.slug}
             to={`/brands/${brand.slug}/${child.slug}`}
             title={child.title}

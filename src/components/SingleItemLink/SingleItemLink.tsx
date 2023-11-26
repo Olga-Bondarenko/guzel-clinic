@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 import { FC } from 'react';
 
-import styles from './Services.module.scss';
+import styles from './SingleItemLink.module.scss';
 
-interface SingleServicesLinkProps {
+interface SingleItemLinkProps {
   to: string;
   title: string;
   img: string;
   slug: string;
 }
 
-export const SingleServicesLink: FC<SingleServicesLinkProps> = ({
+export const SingleItemLink: FC<SingleItemLinkProps> = ({
   to,
   title,
   img,

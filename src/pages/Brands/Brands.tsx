@@ -1,12 +1,12 @@
 import { FC } from 'react';
 import { brands } from '../../data/brands';
-import { SingleServicesLink } from '../ServiceLayout/SingleServicesLink/SingleServicesLink';
+import { SingleItemLink } from '../../components/SingleItemLink';
 
 export const Brands: FC = () => {
   return (
     <div className='wrapper'>
       {brands.map((brand) => (
-        <SingleServicesLink
+        <SingleItemLink
           key={brand.slug}
           to={`/brands/${brand.slug}`}
           title={brand.title}

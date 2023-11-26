@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { MethodPropsProps } from '../../types/types';
-import { SingleServicesLink } from '../ServiceLayout/SingleServicesLink/SingleServicesLink';
 
 import styles from '../Pages.module.scss';
+import { SingleItemLink } from '../../components/SingleItemLink';
 
 export const Injection: FC<MethodPropsProps> = ({ services }) => {
   return (
@@ -24,7 +24,7 @@ export const Injection: FC<MethodPropsProps> = ({ services }) => {
       </p>
       <div className={styles.serviceWrapper}>
         {services.map((service) => (
-          <SingleServicesLink
+          <SingleItemLink
             key={service.slug}
             to={`/services/injection-cosmetology/${service.slug}`}
             title={service.title}

@@ -1,5 +1,5 @@
+import { SingleItemLink } from '../components/SingleItemLink';
 import { services } from '../data/services';
-import { SingleServicesLink } from './ServiceLayout/SingleServicesLink/SingleServicesLink';
 
 import styles from './Service.module.scss';
 
@@ -8,7 +8,7 @@ export const Services = () => {
     <div className={styles.root}>
       <div className='wrapper'>
         {services.map((service) => (
-          <SingleServicesLink
+          <SingleItemLink
             key={service.slug}
             to={`/services/${service.slug}`}
             title={service.title}

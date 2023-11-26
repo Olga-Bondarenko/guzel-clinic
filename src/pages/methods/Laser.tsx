@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { MethodPropsProps } from '../../types/types';
-import { SingleServicesLink } from '../ServiceLayout/SingleServicesLink/SingleServicesLink';
 
 import styles from '../Pages.module.scss'
+import { SingleItemLink } from '../../components/SingleItemLink';
 
 const features = [
   'Высокая эффективность практически во всех случаях.',
@@ -67,7 +67,7 @@ export const Laser: FC<MethodPropsProps> = ({services}) => {
 
       <div className={styles.serviceWrapper}>
         {services.map((service) => (
-          <SingleServicesLink
+          <SingleItemLink
           key={service.slug}
             to={`/services/laser-cosmetology/${service.slug}`}
             title={service.title}
