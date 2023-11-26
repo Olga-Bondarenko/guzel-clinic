@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/guzel-clinic/static/css/main.9d9dcf1a.css",
-    "main.js": "/guzel-clinic/static/js/main.08285e28.js",
+    "main.css": "/guzel-clinic/static/css/main.6e612421.css",
+    "main.js": "/guzel-clinic/static/js/main.4af8d824.js",
     "static/media/Hydro-Deluxe.png": "/guzel-clinic/static/media/Hydro-Deluxe.fa9cc8d5c2006c72a91e.png",
     "static/media/Intense-Rheology.png": "/guzel-clinic/static/media/Intense-Rheology.f88bccfe35b48902fc1e.png",
     "static/media/Intense-Lips.png": "/guzel-clinic/static/media/Intense-Lips.70807e6fbfd36352bc21.png",
@@ -17,11 +17,11 @@
     "static/media/epilation.jpg": "/guzel-clinic/static/media/epilation.8bdbc59b1a9ce15ee446.jpg",
     "static/media/belotero-soft.jpeg": "/guzel-clinic/static/media/belotero-soft.ec1aa77527ce9a45c9eb.jpeg",
     "index.html": "/guzel-clinic/index.html",
-    "main.9d9dcf1a.css.map": "/guzel-clinic/static/css/main.9d9dcf1a.css.map",
-    "main.08285e28.js.map": "/guzel-clinic/static/js/main.08285e28.js.map"
+    "main.6e612421.css.map": "/guzel-clinic/static/css/main.6e612421.css.map",
+    "main.4af8d824.js.map": "/guzel-clinic/static/js/main.4af8d824.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d9dcf1a.css",
-    "static/js/main.08285e28.js"
+    "static/css/main.6e612421.css",
+    "static/js/main.4af8d824.js"
   ]
 }
